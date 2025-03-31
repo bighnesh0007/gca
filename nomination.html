@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomination Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+    <script>
+        function handleFormSubmission(event) {
+            event.preventDefault(); // Prevent page refresh
+            alert("Nomination submitted successfully!"); // Confirmation message
+            window.location.href = "index.html"; // Redirect to home page
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2783ac;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 15px;
+            align-self: flex-start;
+            width: 100%;
+            padding-left: 20px;
+        }
+
+        input, select {
+            width: 90%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .radio-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px;
+            width: 100%;
+            background-color: #2783ac;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005f8b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Nomination Form</h2>
+        <form id="nominationForm" onsubmit="handleFormSubmission(event)">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="organizationName">Organization Name:</label>
+            <input type="text" id="organizationName" name="organizationName" required>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Address of Correspondence:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="gstin">GSTIN:</label>
+            <input type="text" id="gstin" name="gstin">
+
+            <label for="sector">Sector:</label>
+            <select id="sector" name="sector" required>
+                <option value="" disabled selected>Select Sector</option>
+                <option value="Technology">Technology</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Fintech">Fintech</option>
+                <option value="Edtech">Edtech</option>
+                <option value="Real Estate">Real Estate</option>
+                <option value="Automobile">Automobile</option>
+                <option value="Agriculture">Agriculture</option>
+                <option value="Tourism">Tourism</option>
+                <option value="Retail">Retail</option>
+                <option value="Manufacturing">Manufacturing</option>
+            </select>
+
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website">
+
+            <label>Are you interested in applying for an Honorary Doctorate?</label>
+            <div class="radio-group">
+                <input type="radio" id="doctorateYes" name="doctorate" value="Yes" required> Yes
+                <input type="radio" id="doctorateNo" name="doctorate" value="No" required> No
+            </div>
+
+            <label>Are you interested in being featured in Forbes India magazine?</label>
+            <div class="radio-group">
+                <input type="radio" id="forbesYes" name="forbes" value="Yes" required> Yes
+                <input type="radio" id="forbesNo" name="forbes" value="No" required> No
+            </div>
+
+            <button type="submit">Submit Nomination</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Conference Awards</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Group 1.png" alt="Logo">
+                </a>
+            </div>
+    
+            <!-- Toggle Button for Mobile -->
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#degrees">Degrees</a></li>
+                
+    
+                <!-- Dropdown for GCA Conference -->
+                <li class="dropdown">
+                    <a href="#">GCA Conference</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="GCA2025.html">GCA 2025</a></li>
+                        <li><a href="GCA2026.html">GCA 2026</a></li>
+                        <li><a href="index.html">GCA 2027</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>The Golden Awards</h1>
+            <p>Celebrating excellence in business, technology, education, and more.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+
+        <p id="summaryAbout">The Golden Conference Award, organized by an MSME company, is a premier tech-conference
+            bringing together global scientists, researchers, and industry leaders to exchange groundbreaking ideas and
+            emerging technologies. It fosters collaboration between academia and industry, providing branding, market
+            research, media solutions, and strategic advisory services. The event also organizes exhibitions, award
+            ceremonies, and conferences to recognize innovation and excellence. Committed to industry leadership, the
+            Golden Conference Award enhances brand visibility, promotes knowledge-sharing, and drives global progress
+            through innovation and business success.</p>
+
+        <div id="aboutContainer">
+            <span id="readMoreAboutBtn" class="readMoreBtn"
+                onclick="toggleReadMore('summaryAbout', 'fullAboutText', 'readMoreAboutBtn', 'aboutContainer')">
+                Read More
+            </span>
+
+            <div id="fullAboutText" style="display: none;">
+                <p>The Golden Conference Award, organized by an MSME company, is a premier tech-conference that unites a
+                    diverse community of scientists, researchers, and industry leaders from top global institutions.
+                    This event serves as an exclusive platform for innovation, facilitating the exchange of
+                    groundbreaking ideas and emerging technologies. Attracting renowned speakers from across the world,
+                    the conference presents cutting-edge research, state-of-the-art tools, and key industry trends,
+                    providing a platform for intellectual discourse and knowledge sharing. It fosters collaboration
+                    between academia and industry, enabling meaningful knowledge exchange and professional networking.
+                </p>
+
+                <p>Beyond knowledge dissemination, the Golden Conference Award is committed to accelerating profitable
+                    brand development and redefining market research through strategic services. Our expertise spans
+                    across diverse sectors, catering to government bodies, NGOs, corporates, and start-ups, ensuring
+                    tailored solutions that align with their business goals.</p>
+
+                <p>We offer comprehensive branding services that define, develop, and implement brand identity by
+                    effectively communicating a business’s message to the target audience. Our expertise extends to
+                    evaluations and research analysis, adhering to high industry standards that maintain our credibility
+                    and reputation. With a vast clientele and customer base, we provide ratings, rankings, and
+                    accreditations that measure a business’s performance and value against global industry benchmarks.
+                </p>
+
+                <p>The Golden Conference Award also specializes in an extensive range of media solutions, including
+                    profiling, consulting, promotions, marketing, and advertising. Our services are designed to enhance
+                    brand visibility and provide businesses with effective communication strategies that elevate their
+                    market presence.</p>
+
+                <p>In addition to branding and media services, the Golden Conference Award is also a key organizer of
+                    exhibitions, award events, conferences, and seminars that nurture, encourage, and promote innovation
+                    and talent. Our mission is to inspire excellence, foster innovation, and honor those who have made a
+                    meaningful impact on society.</p>
+
+                <p>With a strong commitment to excellence and industry leadership, the Golden Conference Award continues
+                    to drive innovation and create lasting business success stories.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="events">
+        <h2>Chronicles of Events</h2>
+
+        <p id="summaryEvents">The Golden Conference Award hosted the The Business and Education Awards &
+            The Icon Awards, honoring excellence across industries. The event celebrated leaders,
+            entrepreneurs, and educators for their contributions to business, education, and leadership. With inspiring
+            speeches, networking opportunities, and global media coverage, the ceremony highlighted innovation, talent,
+            and transformative leadership, reinforcing its mission to drive progress and excellence worldwide.</p>
+
+        <div id="eventsContainer">
+            <span id="readMoreEventsBtn" class="readMoreBtn"
+                onclick="toggleReadMore('summaryEvents', 'fullEventsText', 'readMoreEventsBtn', 'eventsContainer')">
+                Read More
+            </span>
+
+            <div id="fullEventsText" style="display: none;">
+                <p>The Golden Conference Award proudly hosted the The Business and Education Awards &
+                    The Icon Awards, a landmark event celebrating excellence across diverse industries. This
+                    prestigious ceremony brought together leaders, entrepreneurs, educators, and visionaries from around
+                    the world, recognizing individuals and organizations that have made outstanding contributions to
+                    business, education, and leadership. By honoring innovation, talent, and transformative leadership,
+                    the event served as a platform to inspire and empower future change-makers to push boundaries and
+                    drive progress.</p>
+
+                <p>With a strong emphasis on excellence and global impact, the awards set a new benchmark for
+                    recognizing achievements on an The scale. Inspiring speeches from honorees and speakers
+                    showcased their remarkable journeys, sharing insights into their dedication, perseverance, and
+                    success. Attendees had the unique opportunity to engage in networking sessions, connecting with
+                    industry pioneers, innovators, and influencers, fostering valuable collaborations and partnerships.
+                </p>
+
+                <p>The event garnered extensive media coverage, amplifying the achievements of the awardees and
+                    highlighting the significance of the Global Eminence Awards. By bringing together the brightest
+                    minds and celebrating their success, the ceremony reinforced its mission to champion innovation,
+                    leadership, and excellence on a global stage.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="awards">
+        <h2 class="section-heading">Awards Categories</h2>
+        <div class="awards-grid">
+
+            <!-- Start-Up Awards -->
+            <div class="award-category">
+                <h3>Start-Up Awards</h3>
+                <ul>
+                    <li>Innovative Start-Up of the Year</li>
+                    <li>Start-Up of the Year (Industry-Specific)</li>
+                    <li>Emerging Start-Up of the Year</li>
+                    <li>Mobility Start-Up of the Year</li>
+                    <li>Best Social Impact Start-Up</li>
+                </ul>
+            </div>
+
+            <!-- Entrepreneurship & Business Excellence -->
+            <div class="award-category">
+                <h3>Entrepreneurship & Business Excellence</h3>
+                <ul>
+                    <li>Entrepreneur of the Year</li>
+                    <li>Young Entrepreneur of the Year</li>
+                    <li>Woman Entrepreneur of the Year</li>
+                    <li>Innovative Entrepreneur of the Year</li>
+                    <li>Fastest-Growing Company of the Year</li>
+                    <li>CSR Program of the Year</li>
+                    <li>Best Start-Up of the Year</li>
+                    <li>Serial Entrepreneur of the Year</li>
+                    <li>Business Mentor of the Year</li>
+                    <li>Dynamic Entrepreneur of the Year</li>
+                </ul>
+            </div>
+
+            <!-- Technology & Innovation -->
+            <div class="award-category">
+                <h3>Technology & Innovation</h3>
+                <ul>
+                    <li>Most Innovative Tech Company of the Year</li>
+                    <li>AI & Emerging Technology Leader of the Year</li>
+                    <li>Best Digital Transformation Company</li>
+                    <li>Cybersecurity Innovation Award</li>
+                    <li>Blockchain & Fintech Disruptor of the Year</li>
+                </ul>
+            </div>
+
+            <!-- Education & Academia -->
+            <div class="award-category">
+                <h3>Education & Academia</h3>
+                <ul>
+                    <li>Best University/College of the Year</li>
+                    <li>Best Coaching Institute of the Year</li>
+                    <li>Best Online Education Program of the Year</li>
+                    <li>Emerging Play School of the Year</li>
+                    <li>Best Education Mobile App of the Year</li>
+                </ul>
+            </div>
+
+            <!-- Healthcare & Wellness -->
+            <div class="award-category">
+                <h3>Healthcare & Wellness</h3>
+                <ul>
+                    <li>Best Multi-Specialty Hospital of the Year</li>
+                    <li>Fastest-Growing Hospital</li>
+                    <li>Best Fertility Hospital</li>
+                    <li>Best Cosmetic Surgery Clinic</li>
+                    <li>Best Healthcare Start-Up of the Year</li>
+                </ul>
+            </div>
+
+            <!-- Beauty & Personal Care -->
+            <div class="award-category">
+                <h3>Beauty & Personal Care</h3>
+                <ul>
+                    <li>Makeup Artist of the Year</li>
+                    <li>Best Luxury Spa of the Year</li>
+                    <li>Fitness Influencer of the Year</li>
+                    <li>Best Ayurvedic Wellness Brand</li>
+                    <li>Yoga Guru of the Year</li>
+                </ul>
+            </div>
+
+            <!-- Real Estate & Architecture -->
+            <div class="award-category">
+                <h3>Real Estate & Architecture</h3>
+                <ul>
+                    <li>Developer of the Year – Residential</li>
+                    <li>Sustainable Project of the Year</li>
+                    <li>Best Luxury Project</li>
+                    <li>Best Interior Designing Company</li>
+                    <li>Fastest-Growing Real Estate Company</li>
+                </ul>
+            </div>
+
+            <!-- Arts, Media & Literature -->
+            <div class="award-category">
+                <h3>Arts, Media & Literature</h3>
+                <ul>
+                    <li>Visionary Artist of the Year</li>
+                    <li>Poet of the Year</li>
+                    <li>Excellence in Storytelling (Historical Research)</li>
+                    <li>The Digital Art Innovation Award</li>
+                    <li>Author of the Year – Impactful Literature</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Degrees Section -->
+    <section id="degrees">
+        <div class="container">
+            <h2>Degrees</h2>
+            <div class="degrees-wrapper">
+
+                <!-- Honorary Degree -->
+                <div class="degree-category">
+                    <h3>Honorary Degree</h3>
+
+                    <h4>Business & Management</h4>
+                    <ul>
+                        <li>Doctor of Business Administration (Hon. DBA)</li>
+                        <li>Doctor of Public Administration (Hon. D.P.A.)</li>
+                        <li>Doctor of Leadership (Hon. D.Lead.)</li>
+                    </ul>
+
+                    <h4>Science & Technology</h4>
+                    <ul>
+                        <li>Doctor of Science (Hon. D.Sc.)</li>
+                        <li>Doctor of Technology (Hon. D.Tech.)</li>
+                        <li>Doctor of Engineering (Hon. D.Eng.)</li>
+                        <li>Doctor of Environmental Science (Hon. D.Env.Sc.)</li>
+                    </ul>
+
+                    <h4>Arts, Humanities & Social Sciences</h4>
+                    <ul>
+                        <li>Doctor of Arts (Hon. D.A.)</li>
+                        <li>Doctor of Literature (Hon. D.Litt.)</li>
+                        <li>Doctor of Humanities (Hon. D.Hum.)</li>
+                        <li>Doctor of Fine Arts (Hon. D.F.A.)</li>
+                        <li>Doctor of Social Sciences (Hon. D.Soc.Sc.)</li>
+                    </ul>
+
+                    <h4>Law & Political Science</h4>
+                    <ul>
+                        <li>Doctor of Laws (Hon. LL.D.)</li>
+                        <li>Doctor of Political Science (Hon. D.Pol.Sc.)</li>
+                    </ul>
+
+                    <h4>Education & Psychology</h4>
+                    <ul>
+                        <li>Doctor of Education (Hon. D.Ed.)</li>
+                        <li>Doctor of Psychology (Hon. D.Psych.)</li>
+                    </ul>
+
+                    <h4>Medicine & Health Sciences</h4>
+                    <ul>
+                        <li>Doctor of Medicine (Hon. M.D.)</li>
+                        <li>Doctor of Music (Hon. D.Mus.)</li>
+                    </ul>
+
+                    <h4>Philosophy & Theology</h4>
+                    <ul>
+                        <li>Doctor of Philosophy (Hon. Ph.D.)</li>
+                        <li>Doctor of Theology (Hon. D.Th.)</li>
+                    </ul>
+                </div>
+
+                <!-- Doctorate Degrees -->
+                <div class="degree-category">
+                    <h3>Doctorate Degree</h3>
+                    <ul>
+                        <li>Doctorate of Business Administration</li>
+                        <li>Doctorate of Computer Science</li>
+                    </ul>
+                </div>
+
+                <!-- Post Doctorate Degrees -->
+                <div class="degree-category">
+                    <h3>Post Doctorate Degree</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="nomination">
+        <!-- Background Video -->
+        <video autoplay muted loop id="nominationVideo">
+            <source src="images/nominate.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Content Wrapper -->
+        <div class="nomination-content">
+            <h2>Nominate Now</h2>
+            <p>Apply for the prestigious Golden Conference Awards and get the recognition you deserve.</p>
+            <a href="nomination.html" class="nominate-btn">Submit Your Nomination</a>
+        </div>
+    </section>
+
+
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <button class="faq-question">What are The Golden Conference Awards?</button>
+            <div class="faq-answer">
+                The Golden Conference Awards recognize and celebrate the outstanding achievements of
+                individuals and organizations across various fields, including business, technology, arts, culture, and
+                education.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Who can be nominated for The Golden Conference Awards?</button>
+            <div class="faq-answer">
+                Individuals and organizations that have made significant contributions in their respective fields are
+                eligible for nomination.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">What are the benefits of participating?</button>
+            <div class="faq-answer">
+                Participating in The Golden Conference Awards offers recognition, networking, exposure,
+                inspiration, and opportunities.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">How do I nominate someone for an award?</button>
+            <div class="faq-answer">
+                To nominate someone, please fill out the nomination form available on our official website.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">How can I contact The Golden Conference Awards team?</button>
+            <div class="faq-answer">
+                You can contact us at <b>infogoldenconference@gmail.com</b> or call <b>+91 8283857170</b>.
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For nominations and queries, reach out to us at:</p>
+        <p>Email: infogoldenconference@gmail.com</p>
+        <p>Phone: +91 8283857170.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Golden Awards. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
