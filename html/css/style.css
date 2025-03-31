@@ -116,7 +116,7 @@
   
   /* Hero Section */
   .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/background.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -630,4 +630,70 @@
     }
   }
   
+  .flag-counter-section {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
   
+  .flag-card {
+    padding: 15px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .flag-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .flag-icon {
+    border-radius: 8px;
+    border: 2px solid #fff;
+    /* width: 80px; */
+    /* height: 60px; */
+    object-fit: cover;
+    transition: all 0.3s ease;
+  }
+  
+  .flag-card:hover .flag-icon {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2) !important;
+  }
+  
+  .flag-label {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.9rem;
+    margin-top: 8px;
+  }
+  
+  .visit-count {
+    font-size: 0.75rem;
+    color: #666;
+    display: block;
+  }
+  
+  /* Add animation for flags */
+  @keyframes flagWave {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .flag-card:hover .flag-icon {
+    animation: flagWave 1s ease infinite;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .flag-icon {
+      width: 60px;
+      height: 45px;
+    }
+    
+    .flag-label {
+      font-size: 0.8rem;
+    }
+    
+    .visit-count {
+      font-size: 0.7rem;
+    }
+  }
